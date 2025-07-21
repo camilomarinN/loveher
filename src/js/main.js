@@ -5,7 +5,7 @@ const INSTANCE_COUNT_LARGE = 700;
 const SPAWN_RADIUS = 50;
 const HDRI_URL =
   "https://happy358.github.io/Images/HDR/kloofendal_48d_partly_cloudy_puresky_2k.jpg";
-const AUDIO_FILE = "./love.mp3";
+const AUDIO_FILE = "/love.mp3";
 
 let scene, camera, renderer, controls;
 let instancedMesh, heartGeometry, environmentTexture;
