@@ -1,0 +1,162 @@
+@import url(https://fonts.googleapis.com/css2?family=Asap&display=swap);
+body,
+section {
+  width: 100vw;
+  min-height: 100vh;
+  position: relative;
+}
+body,
+h1,
+h2,
+main,
+p,
+section {
+  position: relative;
+}
+.love-blur,
+h2 {
+  font-style: italic;
+}
+#downloadBtn,
+h2 {
+  margin-top: 1rem;
+}
+#downloadBtn,
+body {
+  color: #fff;
+  font-family: Asap, sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,
+html {
+  background: #000;
+  overscroll-behavior-x: none;
+  overscroll-behavior-y: none;
+}
+body {
+  text-align: center;
+  overflow-x: hidden;
+  font-size: 1.3rem;
+  -webkit-tap-highlight-color: transparent;
+}
+canvas {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  pointer-events: none;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#arrow {
+  position: absolute;
+  bottom: 2vh;
+  left: 0;
+  right: 0;
+  font-size: 30vmin;
+  transform-origin: center center;
+  transform: rotate(90deg);
+  -webkit-animation: 2s infinite arrow;
+  animation: 2s infinite arrow;
+}
+@-webkit-keyframes arrow {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+@keyframes arrow {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+h1 {
+  font-size: 8vw;
+  color: #fff;
+  font-weight: 700;
+  padding: 20px;
+  animation: 3s ease-in-out fadeIn;
+}
+h2 {
+  color: #fff;
+  font-size: 3vw;
+  text-shadow: 0 0 10px #ffb6c1;
+  animation: 6s ease-in-out infinite float;
+}
+.love-blur {
+  display: inline-block;
+  background: rgba(255, 192, 203, 0.2);
+  backdrop-filter: blur(10px);
+  padding: 2rem;
+  border-radius: 20px;
+  font-size: 2rem;
+  max-width: 600px;
+  margin: 2rem auto;
+  box-shadow: 0 0 30px rgba(255, 182, 193, 0.5);
+  color: #fff;
+  line-height: 1.6;
+  border: 1px solid rgba(255, 182, 193, 0.4);
+  animation: 4s ease-in-out infinite glow;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+@keyframes glow {
+  0%,
+  100% {
+    box-shadow: 0 0 20px rgba(255, 182, 193, 0.5);
+  }
+}
+#downloadBtn {
+  padding: 0.8rem 1.5rem;
+  font-size: 1.1rem;
+  background-color: #ff1493;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 0 0 15px rgba(220, 20, 60, 0.5);
+  transition: background 0.3s, transform 0.3s;
+}
+#downloadBtn:hover {
+  background-color: #a40021;
+  transform: scale(1.05);
+}
